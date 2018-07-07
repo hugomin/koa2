@@ -7,7 +7,7 @@
     "start": "npm run prod && node build/app.js",
     "dev": "webpack --process ./config/webpack.dev.js",
     "prod": "webpack --config ./config/webpack.prod.js",
-    "build": "babel app.es6 -o app.js && babel config/config.es6 -o config/config.js && babel controller/indexController.es6 -o controller/indexController.js && babel controller/initController.es6 -o controller/initController.js && babel public/script/index.es6 -o public/script/index.js && babel models/indexmodel.es6 -o models/indexmodel.js",
+    "build": "gulp && npm run prod",
     "server": "mocha ./build/test/server.js",
     "e2e": "node test/e2e.js",
     "test": "karma start"
