@@ -5,7 +5,7 @@ class indexmodel {
     }
     updateNum() {
         const options = {
-            uri: "http://localhost:8888/PRAISETHUMB/index.php",
+            uri: "http://localhost:8888/koa2/PRAISETHUMB/index.php",
             methods: "GET"
         }
         return new Promise((resolve, reject) => {
@@ -21,4 +21,5 @@ class indexmodel {
         })
     }
 }
+
 export default indexmodel;
