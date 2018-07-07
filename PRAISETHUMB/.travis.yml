@@ -8,6 +8,5 @@ before_install:
 scripts:
   - npm run test
 after_success:
-  # - npm prune --production  # 删除devDependencies 
-  # - tar -jcf build.tar.bz2 *    # 打包并压缩代码
-  # - scp indoor-server.tar.bz2 jingsam@102.201.64.94:~/
+  - npm run build
+  - scp -r build  root@47.93.214.179/home
